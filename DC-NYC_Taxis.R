@@ -2,7 +2,7 @@
 library(tidyverse)
 
 # Reading in the taxi data
-taxi <- read_csv("datasets/taxi.csv")
+taxi <- read_csv("taxi.csv")
 
 # Taking a look at the first few rows in taxi
 head(taxi)
@@ -30,7 +30,7 @@ library(viridis)
 
 # Retrieving a stored map object which originally was created by
 # manhattan <- get_map("manhattan", zoom = 12, color = "bw")
-manhattan <- readRDS("datasets/manhattan.rds")
+manhattan <- readRDS("manhattan.rds")
 
 # Drawing a density map with the number of journey start locations
 ggmap(manhattan, darken = 0.5) +
