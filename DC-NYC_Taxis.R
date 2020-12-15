@@ -7,7 +7,6 @@ taxi <- read_csv("datasets/taxi.csv")
 # Taking a look at the first few rows in taxi
 head(taxi)
 
-
 # Renaming the location variables,
 # dropping any journeys with zero fares and zero tips,
 # and creating the total variable as the log sum of fare and tip
